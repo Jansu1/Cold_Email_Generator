@@ -1,2 +1,23 @@
-# Cold_Email_Generator
-The Cold Email Generator creates personalized cold emails based on job details and user profiles. It uses language processing to craft effective email content quickly. Perfect for job seekers, it simplifies and improves job application outreach.
+📧 Cold Mail Generator
+Cold email generator using Llama3.1 LLM, Langchain, Chromadb, and Streamlit.
+
+Cold email generator using Groq, Langchain, and Streamlit. It allows users to input the URL of a company's careers page. The tool then extracts job listings from that page and generates personalized cold emails. These emails include relevant portfolio links sourced from a vector database, based on the specific job descriptions.
+
+Take a scenario: Cold emails can be an effective way for students to reach out to hiring managers for various reasons. Here’s a scenario illustrating how and why students might send cold emails:
+
+Scenario: Job Search for a Recent Graduate
+Background: Sai Sujan is a recent graduate with a degree in Computer Science. He has just completed a coding bootcamp and is looking for a full-time job as a software developer. He has identified several companies where he’d like to work, but he doesn’t have any direct connections within those organizations.
+
+Objective: Sai Sujan wants to introduce himself to hiring managers at these companies to express his interest in potential job opportunities and to demonstrate his enthusiasm and qualifications.
+
+The Cold email tool helps in generating a direct email for the respective job description upon giving it as input, thus saving time and also aligning itself accordingly to the job role.
+
+![image](https://github.com/user-attachments/assets/ede8d833-89dc-4c25-93c7-3e9e4e47d3fe)
+
+![image](https://github.com/user-attachments/assets/50563624-a7cb-4217-bcea-4a9fe68b493b)
+
+Set-up To get started we first need to get an API_KEY from here: https://console.groq.com/keys. Inside app/.env update the value of GROQ_API_KEY with the API_KEY you created.
+
+To get started, first install the dependencies using: pip install -r requirements.txt
+
+Run the streamlit app: streamlit run app/main.py
