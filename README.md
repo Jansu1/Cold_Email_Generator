@@ -1,5 +1,4 @@
-📧 Cold Mail Generator
-Cold email generator using Llama3.1 LLM, Langchain, Chromadb, and Streamlit.
+📧 Cold Mail Generator using Llama3.1 LLM, Langchain, Chromadb, and Streamlit.
 
 Cold email generator using Groq, Langchain, and Streamlit. It allows users to input the URL of a company's careers page. The tool then extracts job listings from that page and generates personalized cold emails. These emails include relevant portfolio links sourced from a vector database, based on the specific job descriptions.
 
