@@ -5,8 +5,6 @@ from chains import Chain
 from portfolio import Portfolio
 from utils import clean_text
 
-# Access the API key from Streamlit's secrets management
-API_KEY = st.secrets["GROQ_API_KEY"]
 
 def create_streamlit_app(llm, portfolio, clean_text):
     st.title("📧 Cold Mail Generator")
@@ -27,9 +25,9 @@ def create_streamlit_app(llm, portfolio, clean_text):
         except Exception as e:
             st.error(f"An Error Occurred: {e}")
 
+
 if __name__ == "__main__":
-    # Initialize Chain with the API key if needed
-    chain = Chain(api_key=API_KEY)
+    chain = Chain()
     portfolio = Portfolio()
     st.set_page_config(layout="wide", page_title="Cold Email Generator", page_icon="📧")
     create_streamlit_app(chain, portfolio, clean_text)
